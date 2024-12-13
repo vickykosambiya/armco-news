@@ -14,7 +14,7 @@ def parse_groq_stream(stream):
 
 try:
     # secrets = dotenv_values(".env")  # for dev env
-    GROQ_API_KEY = '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'
+    # GROQ_API_KEY = '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'
 except:
     secrets = st.secrets  # for streamlit deployment
     GROQ_API_KEY = secrets["GROQ_API_KEY"]
