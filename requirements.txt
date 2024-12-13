@@ -1,0 +1,7 @@
+groq
+lxml
+requests
+deep_translator
+os
+math
+streamlit
