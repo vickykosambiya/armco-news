@@ -2,3 +2,4 @@ groq
 lxml
 requests
 deep_translator
+math
