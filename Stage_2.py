@@ -12,12 +12,12 @@ def parse_groq_stream(stream):
             if chunk.choices[0].delta.content is not None:
                 yield chunk.choices[0].delta.content
 
-#try:
+try:
     # secrets = dotenv_values(".env")  # for dev env
-    #GROQ_API_KEY = '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'
-#except:
-secrets = st.secrets  # for streamlit deployment
-GROQ_API_KEY = secrets["GROQ_API_KEY"]
+    GROQ_API_KEY = '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'
+except:
+    secrets = st.secrets  # for streamlit deployment
+    GROQ_API_KEY = secrets["GROQ_API_KEY"]
 
 # save the api_key to environment variable
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
